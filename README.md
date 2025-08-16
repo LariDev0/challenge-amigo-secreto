@@ -23,7 +23,6 @@ Este projeto foi criado para praticar lógica de programação, manipulação de
 ## 🛠 Tecnologias Utilizadas  
 - **JavaScript**  
 - **HTML/CSS** (para interface web)  
-- **Node.js** (opcional, se executado no backend)  
 
 ---
 
