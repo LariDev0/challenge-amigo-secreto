@@ -51,20 +51,6 @@ npm install
 
 ---
 
-## ▶️ Como Executar
-
-### Caso seja um projeto web:
-
-1. Abra o arquivo `index.html` diretamente no navegador.
-
-### Caso seja via Node.js:
-
-```bash
-node index.js
-```
-
----
-
 ## 📂 Estrutura do Projeto
 
 ```
