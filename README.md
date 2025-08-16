@@ -7,10 +7,8 @@ Projeto desenvolvido como desafio de programação no programa One - Oracle Next
 ## 📚 Índice  
 - [Sobre](#-sobre)  
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)  
-- [Instalação](#-instalação)  
-- [Como Executar](#-como-executar)  
+- [Instalação](#-instalação)   
 - [Estrutura do Projeto](#-estrutura-do-projeto)  
-- [Possíveis Problemas](#-possíveis-problemas)  
 - [Contribuição](#-contribuição)  
 - [Licença](#-licença)  
 
