@@ -69,18 +69,11 @@ node index.js
 
 ```
 challenge-amigo-secreto/
-│-- index.html        # Página principal (se for web)
-│-- style.css         # Estilos (se aplicável)
+│-- index.html        # Página principal 
+│-- style.css         # Estilos
 │-- script.js         # Lógica do sorteio
 │-- README.md         # Documentação
 ```
-
----
-
-## 🐞 Possíveis Problemas
-
-* Se dois nomes iguais forem cadastrados, o sorteio pode gerar confusão.
-* É necessário ter **pelo menos 2 participantes** para o sorteio funcionar corretamente.
 
 ---
 
@@ -117,7 +110,4 @@ Sinta-se livre para utilizá-lo e modificá-lo.
 
 ---
 
-```
-
-👉 Você quer que eu já adapte o README para **JavaScript puro no navegador (HTML + CSS + JS)**, ou prefere deixar genérico (incluindo Node.js como opção)?
 ```
