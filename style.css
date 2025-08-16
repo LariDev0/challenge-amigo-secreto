@@ -1,0 +1,297 @@
+:root {
+    --color-primary: #4e92a3;
+    --color-secondary: #FFF9EB;
+    --color-tertiary: #C4C4C4;
+    --color-button: #4e92a3;
+    --color-button-hover: #245362;
+    --color-text: #444444;
+    --color-white: #FFFFFF;
+    --color-success: #05DF05;
+    --shadow-default: 0 4px 8px rgba(0, 0, 0, 0.2);
+    --transition-fast: all 0.3s ease;
+}
+
+@font-face {
+    font-family: 'VCR OSD Mono';
+    src: url('../fonts/VCR_OSD_MONO.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Reset e Base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #245362;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.main-content {
+    width: 100%;
+    max-width: 800px;
+    background: var(--color-white);
+    border-radius: 32px;
+    overflow: hidden;
+    box-shadow: var(--shadow-default);
+}
+
+/* Header */
+.header-banner {
+    background-color: var(--color-primary);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 4px solid var(--color-white);
+}
+
+.main-title {
+    font-family: 'VCR OSD Mono', monospace;
+    font-size: 48px;
+    color: var(--color-white);
+    text-shadow: 0 0 10px var(--color-primary), 0 0 20px rgba(0, 255, 0, 0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin: 20px 0;
+}
+
+.header-banner img {
+    height: 120px;
+    margin-top: 20px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.3));
+}
+
+/* Seção Principal */
+.input-section {
+    background-color: var(--color-secondary);
+    padding: 40px 30px;
+    border-radius: 0 0 32px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.section-title {
+    font-family: 'VCR OSD Mono', monospace;
+    font-size: 24px; /* Tamanho menor que o título principal */
+    color: var(--color-primary); /* Verde neon para manter consistência */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 15px 0;
+    padding: 10px;
+}
+
+/* Input e Botões */
+.input-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.input-name {
+    flex: 1;
+    padding: 15px 20px;
+    border: 2px solid var(--color-primary);
+    border-radius: 25px 0 0 25px;
+    font-size: 1rem;
+    transition: var(--transition-fast);
+}
+
+.input-name:focus {
+    outline: none;
+    border-color: var(--color-button);
+    box-shadow: 0 0 0 3px #245362;
+}
+
+.button-add {
+    padding: 15px 25px;
+    background-color: var(--color-primary);
+    color: var(--color-text);
+    border: 2px solid var(--color-primary);
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.button-add:hover {
+    background-color: #B0B0B0;
+}
+
+/* Resultado do Sorteio */
+.resultado {
+    width: 100%;
+    max-width: 500px;
+    background-color: var(--color-white);
+    border-radius: 25px;
+    padding: 25px;
+    margin: 20px 0;
+    text-align: center;
+    box-shadow: var(--shadow-default);
+    animation: fadeIn 0.5s ease-out forwards;
+    border: 3px solid var(--color-success);
+}
+
+.resultado h3 {
+    font-family: 'VCR OSD Mono', monospace;
+    color: var(--color-success);
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 0 0 5px rgba(78, 146, 163, 0.3);
+}
+
+.nome-sorteado {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--color-success);
+    background-color: var(--color-secondary);
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: 10px 0;
+    border: 2px dashed var(--color-success);
+    animation: pulse 2s infinite;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+/* Botão Limpar */
+.button-clear {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: var(--color-white);
+    color: var(--color-button);
+    border: 2px solid var(--color-button);
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-default);
+}
+
+.button-clear:hover {
+    background-color: var(--color-button);
+    color: var(--color-white);
+    transform: translateY(-2px);
+}
+
+.button-clear:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Listas */
+.name-list {
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.name-list li {
+    background-color: var(--color-white);
+    padding: 12px 20px;
+    border-radius: 25px;
+    box-shadow: var(--shadow-default);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.result-list {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--color-success);
+    text-align: center;
+    margin: 15px 0;
+    min-height: 40px;
+}
+
+/* Botão de Sorteio */
+.button-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button-draw {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: var(--color-button);
+    color: var(--color-white);
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition-fast);
+    box-shadow: var(--shadow-default);
+}
+
+.button-draw:hover {
+    background-color: var(--color-button-hover);
+    transform: translateY(-2px);
+}
+
+.button-draw img {
+    margin-right: 15px;
+    width: 24px;
+    height: 24px;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .main-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.4rem;
+    }
+    
+    .input-wrapper {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .input-name,
+    .button-add {
+        border-radius: 25px;
+        border: 2px solid var(--color-primary);
+    }
+    
+    .button-add {
+        border-left: 2px solid var(--color-primary);
+    }
+}

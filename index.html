@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="fonts/VCR_OSD_MONO.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="icon" type="icon" href="assets/kindness_5102269.png">
+    <title>Amigo Secreto</title>
+</head>
+
+<body>
+    <main class="main-content">
+        <header class="header-banner">
+            <h1 class="main-title">Amigo Secreto</h1>
+            <img src="assets/assetstask_01k2px6zrne3ysdvtb13w.png" alt="Imagem representativa de amigo secreto">
+        </header>
+        
+        <section class="input-section">
+            <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <div class="input-wrapper">
+                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
+            </div>
+           
+            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
+            
+            <div id="resultado" class="resultado" style="display: none;">
+                <h3>Amigo Sorteado!</h3>
+                <p id="nome-sorteado" class="nome-sorteado"></p>
+                <div class="confetti-container" id="confetti-container"></div>
+            </div>
+
+            <div class="button-container">
+                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                    <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
+                    Sortear amigo
+                </button>
+            </div>
+            <button class="button-clear" onclick="limparListas()">Novo sorteio</button>
+        </section>
+    </main>
+
+    <script src="app.js" defer></script>
+</body>
+</html>
