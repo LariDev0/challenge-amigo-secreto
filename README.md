@@ -41,12 +41,6 @@ Acesse a pasta do projeto:
 cd challenge-amigo-secreto
 ```
 
-Se houver dependências (Node.js), instale-as:
-
-```bash
-npm install
-```
-
 ---
 
 ## 📂 Estrutura do Projeto
