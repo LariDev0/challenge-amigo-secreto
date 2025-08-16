@@ -32,7 +32,7 @@ Este projeto foi criado para praticar lógica de programação, manipulação de
 Clone este repositório em sua máquina:  
 
 ```bash
-git clone https://github.com/seu-usuario/challenge-amigo-secreto.git
+git clone https://github.com/LariDev0/challenge-amigo-secreto.git
 ````
 
 Acesse a pasta do projeto:
@@ -49,7 +49,7 @@ cd challenge-amigo-secreto
 challenge-amigo-secreto/
 │-- index.html        # Página principal 
 │-- style.css         # Estilos
-│-- script.js         # Lógica do sorteio
+│-- script.js         # Lógica 
 │-- README.md         # Documentação
 ```
 
@@ -65,17 +65,17 @@ Para contribuir:
 2. Crie uma nova branch com sua feature:
 
    ```bash
-   git checkout -b minha-feature
+   git checkout -b
    ```
 3. Commit suas alterações:
 
    ```bash
-   git commit -m 'Adicionando nova feature'
+   git commit -m 
    ```
 4. Faça um **push**:
 
    ```bash
-   git push origin minha-feature
+   git push origin 
    ```
 5. Abra um **Pull Request**.
 
